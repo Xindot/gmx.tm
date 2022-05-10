@@ -17,7 +17,7 @@
 
     body {
       background-color: #000;
-      font-family: SF Pro SC,SF Pro Text,SF Pro Icons,PingFang SC,Helvetica Neue,Helvetica,Arial,sans-serif;
+      font-family: SF Pro SC, SF Pro Text, SF Pro Icons, PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif;
     }
 
     #app>.bg {
@@ -41,7 +41,7 @@
       left: 0;
       bottom: 0;
       right: 0;
-      background: rgba(0, 20, 20, .1);
+      background: rgba(0, 20, 20, .6);
       z-index: 0;
     }
 
@@ -59,7 +59,8 @@
       text-align: left;
       font-size: 24px;
     }
-    #app>.header>.img{
+
+    #app>.header>.img {
       position: relative;
     }
 
@@ -77,22 +78,20 @@
     }
 
     #app>.inside>.p-0 {
-      width: 60%;
       font-size: 40px;
       -webkit-text-stroke: 1px #fff;
-      letter-spacing: 5px;
+      letter-spacing: 10px;
     }
 
     #app>.inside>.p-1 {
-      width: 60%;
-      font-weight: 600;
       font-size: 20px;
       margin-top: 10px;
       color: #fff;
       letter-spacing: 5px;
-      opacity: .8;
+      opacity: .6;
     }
-    #app>.inside>.p-1 >a {
+
+    #app>.inside>.p-1>a {
       color: #ff6a00;
     }
 
@@ -140,21 +139,21 @@
       <span class="img">果茗星.商标</span>
     </div>
     <div class="inside">
-      <p class="p-0">GOMYTEA 果茗星</p>
-      <p class="p-1">全国加盟热线：<a href="tel:400-101-1823">400-101-1823</a></p>
+      <p class="p-0">果茗星</p>
+      <p class="p-1">GOMYTEA</p>
       <p class="p-2">
-        <button onclick="showModel()">去官网</button>
+        <button onclick="showMore()">去官网</button>
       </p>
     </div>
 
     <div class="footer">
-      GOMYTEA.COM © 绍兴菓茗聚餐饮管理有限公司 2018-<span id="year"></span>
+      GOMYTEA.COM © 版权所有 绍兴菓茗聚餐饮管理有限公司 2018-<span id="year"></span>
     </div>
   </div>
   <script>
     document.getElementById('year').innerText = new Date().getFullYear()
 
-    function showModel() {
+    function showMore() {
       window.open('http://gomytea.com/')
     }
 
