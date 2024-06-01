@@ -15,9 +15,14 @@
       padding: 0;
     }
 
+    @font-face {
+      font-family: "DingTalk_JinBuTi";
+      src: url("./src/DingTalk_JinBuTi.ttf");
+    }
+
     body {
       background-color: #486266;
-      font-family: SF Pro SC, SF Pro Text, SF Pro Icons, PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-family: "DingTalk_JinBuTi";
     }
 
     #app>.bg {
@@ -27,8 +32,7 @@
       height: 100%;
       left: 0;
       top: 0;
-      /* background-image: url(./img/bg.jpeg?t=1); */
-      background-image: url(./img/bg-2.jpeg?t=2);
+      background-image: url(./img/bg-3.jpeg?t=2);
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -42,7 +46,7 @@
       left: 0;
       bottom: 0;
       right: 0;
-      background: rgba(0, 20, 20, .6);
+      background: rgba(0, 20, 20, .5);
       z-index: 0;
     }
 
@@ -86,14 +90,13 @@
 
     #app>.inside>.p-1 {
       font-size: 20px;
-      margin-top: 10px;
+      margin-top: 0;
       color: #fff;
-      letter-spacing: 2px;
+      letter-spacing: 6px;
       opacity: .6;
     }
 
     #app>.inside>.p-1>a {
-      /* color: #ff6a00; */
       color: #002fa7;
     }
 
@@ -103,14 +106,14 @@
 
     #app>.inside>.p-2>button {
       padding: 10px 20px;
-      /* background-color: #ff6a00; */
-      background-color: #002fa7;
-      color: #fff;
-      border: none;
+      background-color: #002fa780;
+      border: solid 1px #002fa7;
+      color: #ffffff;
       border-radius: 5px;
       font-size: 15px;
       cursor: pointer;
       letter-spacing: 5px;
+      font-family: "DingTalk_JinBuTi";
     }
 
     #app>.footer {
@@ -123,14 +126,14 @@
       width: 100%;
       max-width: 1200px;
       text-align: center;
-      font-size: 14px;
+      font-size: 12px;
       padding: 10px;
       box-sizing: border-box;
-      opacity: .8;
+      opacity: .5;
     }
 
     #app>.footer>a {
-      color: #ff6a00;
+      color: #002fa7;
     }
   </style>
 </head>
